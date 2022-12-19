@@ -1,0 +1,48 @@
+HISTOGRAM MACHINE
+by Ecclysium
+
+https://github.com/ecclysium/histomachine
+Please be certain to check the link above frequently for SAORI updates, and contact GrayArea#5561 on Discord if any issues arise.
+
+
+Last Update: 12/18/2022
+	- First official release
+	
+	
+This SAORI-basic allows a user to make basic histograms, and saves them to a subfolder "graphs" so that the ghost can then display them.
+Using the matplotlib Python library.
+
+
+Arguments:
+	* Word Color - ex "orange"
+		A descriptive color name for the words in the graph. It supports anything used in HTML, such as things like "burlywood", and other names found here. 
+		https://htmlcolorcodes.com/color-names/
+		Alternately, hex codes may be used.
+		
+	* Bar Color - ex "orange"
+		A descriptive color name, following the same requirements as the above. The color of the histogram bars.
+		
+	* Group Names - ex "groupnameone,groupnametwo"
+		A comma-delimited list of the names of the groups for the histogram.
+		
+	* Heights - ex "12,45"
+		A comma-delimited list of the height numbers for each histogram bar, in the same order as the last argument.
+		
+	* Title - ex "What A Great Histogram Name"
+		Any name that you would like the histogram to display on it to describe the data.
+		
+	* File Name - ex "histogram.png"
+		The filename that the program will save the image to. 
+		
+	* DPI - ex 100
+		The size of the image. 100 is probably too large to display in most balloons, so consider 50 or lower.
+		
+		
+		
+Example Function:
+
+//Creates a histogram and saves it in a subfolder 'graphs' under the specified name.
+histogram{
+	_i = FUNCTIONEX("saori/proxy_ex.dll","saori/histomachine.exe","mediumslateblue","#D5BDDF","group1,group2,group3,group4,group5,group6","9,18,36,31,4,19","Histogram", "test.png", 55)
+	"\b2\_b[graphs\test.png]"
+}
