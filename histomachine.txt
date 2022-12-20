@@ -5,7 +5,7 @@ https://github.com/ecclysium/histomachine
 Please be certain to check the link above frequently for SAORI updates, and contact GrayArea#5561 on Discord if any issues arise.
 
 
-Last Update: 12/18/2022
+Last Update: 12/19/2022
 	- First official release
 	
 	
@@ -26,7 +26,7 @@ Arguments:
 		A comma-delimited list of the names of the groups for the histogram.
 		
 	* Heights - ex "12,45"
-		A comma-delimited list of the height numbers for each histogram bar, in the same order as the last argument.
+		A comma-delimited list of the height numbers for each histogram bar, in the same order as the last argument. Cannot be a floating point number.
 		
 	* Title - ex "What A Great Histogram Name"
 		Any name that you would like the histogram to display on it to describe the data.
@@ -35,7 +35,7 @@ Arguments:
 		The filename that the program will save the image to. 
 		
 	* DPI - ex 100
-		The size of the image. 100 is probably too large to display in most balloons, so consider 50 or lower.
+		The general size of the image. 100 is probably too large to display in most balloons, so consider 50 or lower.
 		
 		
 		
